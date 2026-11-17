@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animation</title>
+	
+	
+	<style>
+	
+		
+body {
+ background-color:#FFE6AE;
+    height: 1800px;   
+	margin: 0px;
+}		
+		
+	
+
+nav{
+	display:flex;
+	justify-content:space-between;
+	font-size: 20px;
+			
+		
+		
+		}
+			nav a{
+			padding: 10px;
+						  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+		}
+		
+		
+		
+				header {
+  position: sticky;
+  top: 0;
+ 
+  background: #f04830;
+		
+			overflow: auto;
+			padding: 30px;
+					
+					
+}
+main{
+	display:flex;
+	justify-content:center;
+	gap:30px;
+	margin-top:150px;
+	background-color: #f04830;
+	padding: 50px;
+}
+
+button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color:#FFE6AE;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+	  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+button:hover {
+  letter-spacing: 3px;
+  background-color: #67926E;
+  color: hsl(0, 0%, 100%);
+  
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color:#67926E;
+  color: hsl(0, 0%, 100%);
+ 
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+
+		h2{
+			font-size: 30px; 
+			
+			
+			
+		}	
+		
+		
+		
+		
+			footer{
+			
+			padding-bottom: 20px;
+			
+			
+			
+		}
+
+.about{
+    margin-top: 300px;  
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+	
+}
+
+
+.state{
+    margin-top: 150px;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+	text-align: justify;
+	
+    clear: both;
+	
+}
+		.about-text{
+			
+			justify-content: center;
+			text-align: justify;
+		}
+		
+		#title{ margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+			
+			
+		
+		}
+		
+		h1{
+			font-size: 150px;
+			color: #f04830;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+				 font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+		}
+		
+	
+
+	a:link {
+	color: #FFE6AE;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFE6AE;
+}
+a:hover {
+	text-decoration: none;
+	color: #67926E;
+}
+a:active {
+	text-decoration: none;
+	color: #FFE6AE;
+}
+				.logo{font-family:'Playfair Display',serif;
+			font-size: 25px;
+			color: #FFE6AE;
+		}
+.logo span{color:#67926E}
+		
+		
+	.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+			padding-bottom: 100px;
+		margin-top: -50px;
+}
+
+.pic {
+    text-align: center;
+	margin-top: -100;
+}
+
+p {
+    margin-top: -40px;
+    margin-bottom: 0;
+}
+
+.pic img {
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.pic img:hover {
+	transform: scale(1.03);
+}
+
+/* ================= LIGHTBOX ================= */
+
+.lightbox-target {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.88);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+}
+
+.lightbox-target:target {
+	display: flex;
+}
+
+.lightbox-target img {
+	max-width: 90%;
+	max-height: 90vh;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* CLOSE BUTTON */
+
+.lightbox-close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	font-size: 40px;
+	color: white;
+	text-decoration: none;
+}
+
+/* NEXT BUTTON */
+
+.next {
+	position: absolute;
+	right: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 70px;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	transition: 0.2s;
+}
+
+.next:hover {
+	color: #67926E;
+	transform: translateY(-50%) scale(1.2);
+}
+		p{
+			
+			padding-top: -10px;
+		}
+	
+	
+	</style>
+		 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:slnt,CRSV,ELSH@-8,1,49.8&family=Cabin:ital,wght@0,400..700;1,400..700&family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+	
+	
+			
+
+
+<body>
+<header>
+<nav>
+    <div class="logo"><a href="Homepage.html">
+	  Eman<span>.</span>K
+	  
+    </a></div>
+ 		
+  <div>
+    <a href="Homepage.html">Home</a>
+   
+    <a href="About.html">About</a>
+  </div>
+	
+	
+</nav>
+</header>
+	
+<div id="title">
+	
+	<h1> animation</h1>
+	</div>
+	
+	
+	<main>
+
+	
+		
+<a href="Graphic Design.html"> 
+<button>Graphic Design</button>
+		</a>
+		
+		<a href="Digital art.html">
+<button> Digital Art</button>
+	  </a>
+		<a href="Traditional Art.html">
+<button> Traditional Art</button>
+		</a>
+		
+		<a href="Photography.html">
+<button> Photography</button>
+		</a>
+		
+			
+		<a href="Animation.html">
+<button> Animation</button>
+		</a>
+		
+		
+	
+	</main>
+	
+
+<footer>
+	
+	</footer>
+  
+  
+
+<div class="images">
+	
+	
+	
+	
+	
+		
+	<div class="pic">
+         <a href="#img1">
+         <video width="800" height="600" autoplay="autoplay" loop="loop" >
+           <source src="Animation/eman_walkcycle_10cFINAL.mp4" type="video/mp4">
+         </video>
+      </a>
+	 <p>"Walkcycle" 2026<br>
+			1920x1080
+		</p>
+
+	</div>
+		
+		
+		
+		
+		<div class="pic">
+         <a href="#img2">
+         <video width="800" height="600" autoplay="autoplay" loop="loop" >
+           <source src="Animation/walking.mp4" type="video/mp4">
+         </video>
+      </a>
+	 <p>"Walkcycle" 2026<br>
+			1920x1080
+		</p>
+	
+
+	</div>
+
+	
+	
+	<div class="pic">
+         <a href="#img3">
+         <video width="800" height="600" autoplay="autoplay" loop="loop" >
+           <source src="Animation/Jumping_Cube.mp4" type="video/mp4">
+         </video>
+      </a>
+	 <p>"Jumping Cube" 2025<br>
+			1920x1080
+		</p>
+
+	</div>
+
+	
+		
+		
+	
+
+	</div>
+	
+
+
+
+<!-- ================= LIGHTBOXES ================= -->
+
+<div id="img1" class="lightbox-target">
+    <a href="#" class="lightbox-close">×</a>
+    <a href="#img2" class="next">›</a>
+	
+  <video width="1400" height="900" autoplay="autoplay" loop="loop" >
+        <source src="Animation/eman_walkcycle_10cFINAL.mp4" type="video/mp4">
+      </video>
+	
+</div>
+
+
+		<div id="img2" class="lightbox-target">
+    <a href="#" class="lightbox-close">×</a>
+    <a href="#img3" class="next">›</a>
+      <video width="1400" height="900" autoplay="autoplay" loop="loop" >
+        <source src="Animation/walking.mp4" type="video/mp4">
+      </video>
+	
+    </div>
+		
+		
+		
+		
+				<div id="img3" class="lightbox-target">
+    <a href="#" class="lightbox-close">×</a>
+    <a href="#img4" class="next">›</a>
+      <video width="1400" height="900" autoplay="autoplay" loop="loop" >
+        <source src="Animation/Jumping_Cube.mp4" type="video/mp4">
+      </video>
+	
+    </div>
+	
+		
+		
+		
+
+
+ 
+
+		
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Graphic Design</title>
+	
+	
+	<style>
+	
+		
+body {
+ background-color:#FFE6AE;
+    height: 1800px;   
+	margin: 0px;
+}		
+		
+	
+
+nav{
+	display:flex;
+	justify-content:space-between;
+	font-size: 20px;
+			
+		
+		
+		}
+			nav a{
+			padding: 10px;
+						  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+		}
+		
+		
+		
+				header {
+  position: sticky;
+  top: 0;
+ 
+  background: #f04830;
+		
+			overflow: auto;
+			padding: 30px;
+					
+					
+}
+main{
+	display:flex;
+	justify-content:center;
+	gap:30px;
+	margin-top:150px;
+	background-color: #f04830;
+	padding: 50px;
+}
+
+button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color:#FFE6AE;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+	  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+button:hover {
+  letter-spacing: 3px;
+  background-color: #67926E;
+  color: hsl(0, 0%, 100%);
+  
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color:#67926E;
+  color: hsl(0, 0%, 100%);
+ 
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+
+		h2{
+			font-size: 30px; 
+			
+			
+			
+			
+		}	
+		
+		
+			footer{
+			
+				padding-bottom: 20px;}
+
+.about{
+    margin-top: 300px;  
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+	
+}
+
+.about-img{
+  
+    width: 300px;
+    height: auto;
+    margin-top: 50px;
+}
+
+
+.state{
+    margin-top: 150px;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+	text-align: justify;
+	
+    clear: both;
+	
+}
+		.about-text{
+			
+			justify-content: center;
+			text-align: justify;
+		}
+		
+		#title{ margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+			
+			
+		
+		}
+		
+		h1{
+			font-size: 150px;
+			color: #f04830;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+				 font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+		}
+		
+	
+
+	a:link {
+	color: #FFE6AE;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFE6AE;
+}
+a:hover {
+	text-decoration: none;
+	color: #67926E;
+}
+a:active {
+	text-decoration: none;
+	color: #FFE6AE;
+}
+				.logo{font-family:'Playfair Display',serif;
+			font-size: 25px;
+			color: #FFE6AE;
+		}
+.logo span{color:#67926E}
+		
+		.images {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-top: 50px;
+			padding-bottom: 100px;
+}
+
+.pic {
+	text-align: center;
+}
+
+.pic img {
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.pic img:hover {
+	transform: scale(1.03);
+}
+
+/* ================= LIGHTBOX ================= */
+
+.lightbox-target {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.88);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+}
+
+.lightbox-target:target {
+	display: flex;
+}
+
+.lightbox-target img {
+	max-width: 90%;
+	max-height: 90vh;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* CLOSE BUTTON */
+
+.lightbox-close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	font-size: 40px;
+	color: white;
+	text-decoration: none;
+}
+
+/* NEXT BUTTON */
+
+.next {
+	position: absolute;
+	right: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 70px;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	transition: 0.2s;
+}
+
+.next:hover {
+	color: #67926E;
+	transform: translateY(-50%) scale(1.2);
+}
+	
+	
+	
+	</style>
+		 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:slnt,CRSV,ELSH@-8,1,49.8&family=Cabin:ital,wght@0,400..700;1,400..700&family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+	
+	
+			
+
+
+<body>
+<header>
+<nav>
+    <div class="logo"><a href="Homepage.html">
+	  Eman<span>.</span>K
+	  
+    </a></div>
+  	
+  <div>
+    <a href="Homepage.html">Home</a>
+   
+    <a href="About.html">About</a>
+  </div>
+	
+	
+  
+</nav>
+</header>
+	
+<div id="title">
+	
+	<h1> digital art</h1>
+	</div>
+	
+	
+	<main>
+
+	
+		
+<a href="Graphic Design.html"> 
+<button>Graphic Design</button>
+		</a>
+		
+		<a href="Digital art.html">
+<button> Digital Art</button>
+	  </a>
+		<a href="Traditional Art.html">
+<button> Traditional Art</button>
+		</a>
+		
+		<a href="Photography.html">
+<button> Photography</button>
+		</a>
+		
+			
+		<a href="Animation.html">
+<button> Animation</button>
+		</a>
+		
+		
+	
+	</main>
+
+
+<footer>
+  
+  
+
+<div class="images">
+
+    <div class="pic">
+        <a href="#img1">
+            <img src="images/boat.png" width="451" height="316">
+        </a>
+      <p>"Violent Sea" 2024<br>
+		 Archival Inkjet Print  8x10
+	  </p>
+    </div>
+	
+
+    <div class="pic">
+        <a href="#img2">
+            <img src="images/Forrest .png" width="451" height="322">
+        </a>
+      <p>"Sunlit Forest" 2025<br>
+		 Archival Inkjet Print  8x10
+	  </p>
+    </div>
+
+    <div class="pic">
+        <a href="#img3">
+            <img src="images/lava.png" width="451" height="315">
+        </a>
+      <p>"Erupt" 2025<br>
+		  Archival Inkjet Print  8x10
+	  </p>
+    </div>
+
+    <div class="pic">
+        <a href="#img4">
+            <img src="images/Eman_Radial copy.png" width="451" height="684">
+        </a>
+        <p>"Glitching box" 2026<br>
+			13x19
+	  </p>
+    </div>
+	
+	
+	
+	
+	
+	
+	 <div class="pic">
+        <a href="#img5">
+            <img src="images/Khalid_still life 1 copy.png" width="451" height="684">
+        </a>
+        <p>"Galaxy Plate" 2026<br>
+			 Archival Inkjet Print 13x19
+	   </p>
+    </div>
+	
+	
+	
+  <div class="pic">
+        <a href="#img6">
+            <img src="images/Eman_Diagonal copy.jpg" width="451" height="684">
+        </a>
+        <p>"Thin line" 2026<br>
+			 Archival Inkjet Print 13x19
+	  </p>
+    </div>
+	
+	
+	
+
+	
+	
+	
+	
+	
+
+	</div>
+	
+
+
+
+<!-- ================= LIGHTBOXES ================= -->
+
+<div id="img1" class="lightbox-target">
+    <a href="#" class="lightbox-close">×</a>
+    <a href="#img2" class="next">›</a>
+    <img src="images/boat.png">
+</div>
+
+<div id="img2" class="lightbox-target">
+    <a href="#" class="lightbox-close">×</a>
+    <a href="#img3" class="next">›</a>
+    <img src="images/Forrest .png">
+</div>
+
+<div id="img3" class="lightbox-target">
+    <a href="#" class="lightbox-close">×</a>
+    <a href="#img4" class="next">›</a>
+    <img src="images/lava.png">
+</div>
+
+<div id="img4" class="lightbox-target">
+    <a href="#" class="lightbox-close">×</a>
+    <a href="#img5" class="next">›</a>
+    <img src="images/Eman_Radial copy.png">
+	
+</div>
+
+	
+	
+	
+	
+	<div id="img5" class="lightbox-target">
+    <a href="#" class="lightbox-close">×</a>
+    <a href="#img6" class="next">›</a>
+    <img src="images/Khalid_still life 1 copy.png">
+	
+</div>
+
+	<div id="img6" class="lightbox-target">
+    <a href="#" class="lightbox-close">×</a>
+    <a href="#img7" class="next">›</a>
+    <img src="images/Eman_Diagonal copy.jpg">
+	
+</div>
+
+
+
+	
+  </div>
+
+  
+</footer>
+		
+</body>
+</html>
